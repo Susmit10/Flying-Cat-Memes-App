@@ -16,8 +16,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:src="@mipmap/app_icon"
-        android:contentDescription="@string/image"
-         />
+        android:contentDescription="@string/image" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@+id/memeImageView"
+        app:layout_constraintBottom_toBottomOf="@+id/memeImageView"
+        app:layout_constraintLeft_toLeftOf="@+id/memeImageView"
+        app:layout_constraintRight_toRightOf="@+id/memeImageView"/>
 
     <Button
         android:id="@+id/shareButton"
