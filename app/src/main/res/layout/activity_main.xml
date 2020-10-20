@@ -4,19 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#fff"
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/meme_imageView"
+        android:id="@+id/memeImageView"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/shareButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:src="@mipmap/app_icon"
+        android:contentDescription="@string/image"
+         />
 
     <Button
+        android:id="@+id/shareButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:padding="22dp"
@@ -30,6 +34,7 @@
         android:onClick="shareMeme"/>
 
     <Button
+        android:id="@+id/nextButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:padding="22dp"
