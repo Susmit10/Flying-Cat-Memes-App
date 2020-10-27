@@ -103,7 +103,7 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    fun nextMeme() {
+    fun nextMeme(view: View) {
 //        Toast.makeText(this, "Next", Toast.LENGTH_SHORT).show()
         loadMeme()
 
@@ -124,7 +124,7 @@ class MainActivity : AppCompatActivity() {
     }
 
 
-    fun shareMeme() {
+    fun shareMeme(view: View) {
 
         val imageView: ImageView = findViewById(R.id.memeImageView)
         val image: Bitmap? = getBitmapFromView(imageView)
